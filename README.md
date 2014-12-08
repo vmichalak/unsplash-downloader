@@ -22,7 +22,7 @@ after that, create a "photo" folder :
 
 and Let's GO !
 
-	node index.js *targetfolder*
+	node index.js targetfolder
 
 License
 -------------
