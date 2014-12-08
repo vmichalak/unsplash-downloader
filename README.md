@@ -13,7 +13,8 @@ How can i use the tool
 -------------
 You can clone this repo and use npm to get all dependencies :
 
-	npm init
+	git clone git@github.com:vmichalak/unsplash-downloader.git
+	npm install
 
 after that, create a "photo" folder :
 
