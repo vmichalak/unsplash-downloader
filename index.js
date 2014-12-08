@@ -29,8 +29,6 @@ function downloader(pageNumber, folder)
           console.log("Photo " + fileName + " downloaded.");
         });
         // End Download Image
-
-        //console.log(downloadUrl);
       });
 
       console.log("Page "+pageNumber+" scrapped: "+nbPhotos+" photos added to the waiting list.");
