@@ -9,7 +9,7 @@ Unsplash is a website with a large collection of CC0 photography !
 
 "All photos published on Unsplash are licensed under Creative Commons Zero which means you can copy, modify, distribute and use the photos, even for commercial purposes, all without asking permission from or providing attribution to the photographer or Unsplash."
 
-How can i use the tools
+How can i use the tool
 -------------
 You can clone this repo and use npm to get all dependencies :
 
