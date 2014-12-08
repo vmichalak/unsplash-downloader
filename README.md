@@ -16,13 +16,13 @@ You can clone this repo and use npm to get all dependencies :
 	git clone git@github.com:vmichalak/unsplash-downloader.git
 	npm install
 
-after that, create a "photo" folder :
+after that, create a "photos" folder :
 
 	mkdir photos
 
 and Let's GO !
 
-	node index.js targetfolder
+	node index.js photos
 
 License
 -------------
