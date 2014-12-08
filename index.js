@@ -2,7 +2,7 @@ var cheerio = require('cheerio');
 var request = require('request');
 var fs = require('fs');
 
-function downloader(pageNumber)
+function downloader(pageNumber, folder)
 {
   var baseUrl = "http://unsplash.com";
   var baseGridUrl = "/grid?page=";
@@ -25,7 +25,7 @@ function downloader(pageNumber)
 
         // Download Image
         request(downloadUrl).on('response',  function (res) {
-          res.pipe(fs.createWriteStream('./photos/' + fileName + '.' + res.headers['content-type'].split('/')[1]));
+          res.pipe(fs.createWriteStream(folder+'/' + fileName + '.' + res.headers['content-type'].split('/')[1]));
           console.log("Photo " + fileName + " downloaded.");
         });
         // End Download Image
@@ -45,4 +45,4 @@ function downloader(pageNumber)
 }
 
 //Start the script at the Page 1
-downloader(1);
+downloader(1, process.argv.slice(2));
