@@ -35,7 +35,7 @@ function downloader(pageNumber, folder)
 
       if(nbPhotos > 0)
       {
-        downloader(pageNumber + 1);
+        downloader(pageNumber + 1, folder);
       }
     }
   });
